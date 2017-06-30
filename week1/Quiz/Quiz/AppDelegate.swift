@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  FoodTracker
+//  Quiz
 //
 //  Created by User on 2017. 6. 30..
 //  Copyright © 2017년 Ji-Yong Jeong. All rights reserved.

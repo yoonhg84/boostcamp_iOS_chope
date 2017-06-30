@@ -1,15 +1,15 @@
 //
-//  FoodTrackerTests.swift
-//  FoodTrackerTests
+//  QuizTests.swift
+//  QuizTests
 //
 //  Created by User on 2017. 6. 30..
 //  Copyright © 2017년 Ji-Yong Jeong. All rights reserved.
 //
 
 import XCTest
-@testable import FoodTracker
+@testable import Quiz
 
-class FoodTrackerTests: XCTestCase {
+class QuizTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

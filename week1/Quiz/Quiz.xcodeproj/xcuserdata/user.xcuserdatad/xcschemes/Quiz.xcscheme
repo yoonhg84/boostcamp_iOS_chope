@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE344C5A1F05FA1C005B8C1F"
-               BuildableName = "FoodTracker.app"
-               BlueprintName = "FoodTracker"
-               ReferencedContainer = "container:FoodTracker.xcodeproj">
+               BlueprintIdentifier = "CE344C861F0667A5005B8C1F"
+               BuildableName = "Quiz.app"
+               BlueprintName = "Quiz"
+               ReferencedContainer = "container:Quiz.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE344C6E1F05FA1D005B8C1F"
-               BuildableName = "FoodTrackerTests.xctest"
-               BlueprintName = "FoodTrackerTests"
-               ReferencedContainer = "container:FoodTracker.xcodeproj">
+               BlueprintIdentifier = "CE344C9A1F0667A5005B8C1F"
+               BuildableName = "QuizTests.xctest"
+               BlueprintName = "QuizTests"
+               ReferencedContainer = "container:Quiz.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE344C5A1F05FA1C005B8C1F"
-            BuildableName = "FoodTracker.app"
-            BlueprintName = "FoodTracker"
-            ReferencedContainer = "container:FoodTracker.xcodeproj">
+            BlueprintIdentifier = "CE344C861F0667A5005B8C1F"
+            BuildableName = "Quiz.app"
+            BlueprintName = "Quiz"
+            ReferencedContainer = "container:Quiz.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE344C5A1F05FA1C005B8C1F"
-            BuildableName = "FoodTracker.app"
-            BlueprintName = "FoodTracker"
-            ReferencedContainer = "container:FoodTracker.xcodeproj">
+            BlueprintIdentifier = "CE344C861F0667A5005B8C1F"
+            BuildableName = "Quiz.app"
+            BlueprintName = "Quiz"
+            ReferencedContainer = "container:Quiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +84,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE344C5A1F05FA1C005B8C1F"
-            BuildableName = "FoodTracker.app"
-            BlueprintName = "FoodTracker"
-            ReferencedContainer = "container:FoodTracker.xcodeproj">
+            BlueprintIdentifier = "CE344C861F0667A5005B8C1F"
+            BuildableName = "Quiz.app"
+            BlueprintName = "Quiz"
+            ReferencedContainer = "container:Quiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
