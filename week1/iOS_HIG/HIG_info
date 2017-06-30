@@ -1,0 +1,145 @@
+
+
+iOS 디자인 테마
+clarity
+deference
+depth
+
+iOS 디자인 원리
+Aesthetic Integrity 동작과 모양이 잘 통합되어 있는가.
+Consistency 사람들이 기대하는 방식으로 기능과 동작을 통합.
+Direct Manipulation 장치를 직접 조작하며 결과를 얻을 수 있다.
+Feedback 사용자 행동에 대한 응답으로 인지 가능한 피드백 제공
+Metaphors 사람들이 화면과 물리적으로 상호작용하기 때문에 잘 작동한다.
+UserControl 사용자가 직접 통제.
+
+인터페이스 필수사항
+iOS앱은 공통 인터페이스 요소를 정의하는 프로그래밍 프레임 워크 인 UIKit 의 구성요소를 사용하여 작성됩니다.
+Bars     탐색기능,동작을 시작, 기타요소를 포함
+Views    앱에 표시되는 기본 콘텐츠를 포함.뷰를 사용하면 스크롤 삽입, 삭제, 정렬과 같은 동작을 사용할 수 있습니다.
+Controls 행동을 시작하고 정보를 전달. 버튼 , 스위치, 텍스트필드 등 컨트롤의 예 입니다.
+
+iOS 는 Apple Pay, HealthKit 및 ResearchKit 과 같은 다른 프로그래밍 프레임 워크 및 기술과도 긴밀하게 통합.  
+
+사용자 상호작용
+3D Touch - 설계 지침 ( 홈 화면 작업 , 위젯)
+Accessibility - (iOS접근성 , 접근성 프로그래밍 가이드) 
+Audio - 일관적인 오디오 작동
+Authentication - 오랫동안 지연 , 데이터 입력 최소화
+DataEntry - 선택사항 제시 , 알맞은 기본값 , 유효성 검사 , 도움말로 적절한 값 유형 제시
+Drag and Drop - UIKit 의 Drag and Drop 참조, 중복을 고려해야함. 가능한 한 TextField , TextView 를 참조 , 실행 취소 
+FeedBack - 불필요한 경고 X , 햅틱피드백 
+File handling - App 을 사용하는데 있어서 시스템 적으로 생각할 필요가 없다.
+FirstLaunch - 튜토리얼의 필수요소에 충실.
+Gestures - 표준 제스쳐를 사용하는것이 중요. 
+Loading - 로딩 시간을 기다리는 사람들에게 즐거움을 선사하라.
+Modality - 다른일을 하지못하게 초점을 만듬. Alert?..  , 확실하고 ,안전한 방법. 
+Navigation - 계층적 탐색(설정 및 메일) , 평면 탐색(음악 , 앱스토어) , 콘텐츠 중심 또는 경험 중심의 탐색(게임 책 기타). , 명확한 경로제시. 
+Ratings and Reviews - 평가를 받기위해 사용자를 괴롭히지 마라. 
+Requesting Permission - 허가요청 .불필요하게 정보를 요청하지 않는다.(위치)
+Settings - 앱 내 구성 옵션에 우선 순위를 부여합니다. , 바로가기 제공.
+Terminology - 정확한 날짜와 적절한 단어 문구..사용
+Undo and Redo - 실행 취소 아키텍처 참조.
+
+
+
+시스템 기능
+Multitasking - 슬라이드 오버 , 분할보기 , 그림속의그림 등 백그라운드에서 시용자시작 작업을 마친다.
+Notifications - 상황에따라 알림을 적절하게 사용 . 로컬알림 - 동일한 장치 , 원격알림,푸쉬  - 서버에서 제공.  
+Printing - AirPrint 기술을 활용
+Quick Look - 적절한 미리보기 제공
+Siri - 광고 , 마케팅 , 구매, 판매 등의 내용 포함되서는 안된다.
+TV Providers  
+
+
+
+
+
+
+
+비주얼 디자인
+Animation - 적절한 모션효과 사용 , 일관된 사용
+Branding - 직관적, 사용하기 쉽고, 컨텐츠에 집중.
+Color - 앱 전체에서 보색사용. 
+Layout - 앱 전체에서 일관된 모양을 유지. 불필요한 레이아웃은 제거 , 가로 세로 모두 지원
+Typography - 중요한 정보를 강조 . 동적 유형 크기.
+
+
+
+
+아이콘 및 이미지 
+Image Size and Resolution - 고해상도 디스플레이는 더 많은 픽셀을 가진 이미지를 필요로 합니다.
+App Icon - 앱의 목적을 부각시킬 수 있도록. 단순함 . 
+Custom Icons - 사용자가 직접 정의가능. 간단하고, 일관성유지. Apple 의 복제품 사용x , 정해진 크기 참조.
+Launch Screen - 모든 앱에서 시작화면을 제공 , 기종에 상관없이 출력(AutoLayout). 
+System Icons - 빠른 작업에 사용하기 위해 일반적인 작업,콘텐츠 유형을 나타내는 작은 아이콘 제공.
+
+
+Bars 
+Navigation Bars - 탐색 막대에는 현재보기의 제목표시를 고려 , 탐색이 필요하지 않거나 컨텐트를 관리하기 위한 여러 컨트롤을 원하면 도구모음을 사용하십시오.
+Search Bars - Prominent , Minimal  , 텍스트필드가 아닌 검색창 사용,지우기 및 취소버튼 활성화 , Scope Bar 검색 범위를 좁힐 수 있도록 사용.
+Status Bars - 상태 표시줄을 영구적으로 숨기지 마십시오. 앱 디자인과 조정하여 사용(사용자들이 불편함을 겪지 않도록)
+Tab Bars - 너무많이 구성하지 않는다. 마지막엔 추가버튼.. , 뱃지를 사용. tab bar와 도구 모음은 같은 보기에 함께 나타나지 않습니다. Main 카테고리의 네비게이션 가능.
+ToolBars - Tab bar 와의 차이점을 이해해야함. (액션이 있는 메뉴)
+
+
+
+View
+ActionSheets - 파격적인 선택 자제. 작업시트에서는 스크롤 사용 하지않는다.
+ActivityViews - 간결하게 설명하는 활동 제목 작성. ActionButton 사용.
+Alerts - 경고 최소화. (중요한 정보와 유용한 선택을 제공하는지 확인 , 가로 세로모드 모두 확인.)
+Collections - 상호작용과 애니메이션 모두 지원. 동적 레이아웃 변경할 때 주의. 
+ImageViews - 비 대화식.UIImageView
+Maps - 표준지도 , 위성이미지 ,추적,경로표시가능 , 지도는 일반적으로 대화형으로 유지. MapKit 
+Pages - 선형탐색을 구현하는 방법. 스크롤링 전환(특별한 모양 없다.한페이지에서 다른페이지로 스크롤) , 페이지 컬 전환(화면을 가로질러 실제 책을 연상) , 적절한 경우 비선형 적 탐색
+Popovers - iPhone 에서 사용을 피한다. iPad에서 사용.
+ScrollViews - 줌 동작 지원 . 스크롤뷰를 중첩사용 x , 
+SplitViews - 세로방향인 경우 유용. 
+Tables - Plain , Grouped  TablesRow ( Default , Subtitle , Values )
+TextView - 가독성이 가장 중요.
+WebViews - (Mail) ,  브라우저 작성은 X 
+
+
+
+
+Control
+Button
+Edit Menus
+Labels
+Page Controls 
+Pickers
+Progress Indicators
+Refresh Content Controls
+Segmented Controls
+Sliders
+Steppers
+Switches
+TextFields
+
+
+
+Extensions
+Custom Keyboards
+Document Providers
+Home Screen Actions
+Messaging
+Photo Editing 
+Sharing and Actions 
+Widgets
+
+Technologies
+Apple Pay
+GameKit
+HealthKit
+HomeKit
+iCloud
+In-App Purchase
+Live Photos
+ResearchKit
+Social Media
+Wallet
+
+Resources
+
+
+
