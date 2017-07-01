@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login_View3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onebottle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-yk-caZ">
+                                <rect key="frame" x="16" y="36" width="343" height="150"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyS-vB-alK">
+                                <rect key="frame" x="91" y="216" width="193" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="inputID:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="UYK-WN-nPj"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-VQ-s1G">
+                                <rect key="frame" x="91" y="263" width="193" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="inputPwd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="06n-xK-2tL"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-6J-Ar6">
+                                <rect key="frame" x="101" y="313" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="sign_in_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHH-Oq-8k3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmO-Bd-7tl">
+                                <rect key="frame" x="219" y="313" width="55" height="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="0.33640655262297348" blue="0.31091051495032551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sign_up_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qr-xI-tQY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kdw-VQ-s1G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="0Hn-jV-xys"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kyS-vB-alK" secondAttribute="trailing" constant="75" id="0sF-1d-rhl"/>
+                            <constraint firstItem="W2h-yk-caZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3ep-K9-vcO"/>
+                            <constraint firstItem="iFA-6J-Ar6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="EIe-AP-h3B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YmO-Bd-7tl" secondAttribute="trailing" constant="85" id="Gbh-9m-rML"/>
+                            <constraint firstItem="YmO-Bd-7tl" firstAttribute="top" secondItem="kdw-VQ-s1G" secondAttribute="bottom" constant="20" id="Ka2-Gc-K1Z"/>
+                            <constraint firstItem="W2h-yk-caZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="cnk-TS-oRT"/>
+                            <constraint firstItem="kyS-vB-alK" firstAttribute="top" secondItem="W2h-yk-caZ" secondAttribute="bottom" constant="30" id="exG-m1-REC"/>
+                            <constraint firstItem="kdw-VQ-s1G" firstAttribute="top" secondItem="kyS-vB-alK" secondAttribute="bottom" constant="17" id="gw3-wZ-vbK"/>
+                            <constraint firstItem="iFA-6J-Ar6" firstAttribute="top" secondItem="kdw-VQ-s1G" secondAttribute="bottom" constant="20" id="jZw-UL-eV9"/>
+                            <constraint firstItem="kyS-vB-alK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="jqd-No-xIc"/>
+                            <constraint firstItem="W2h-yk-caZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xTU-GY-Wem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kdw-VQ-s1G" secondAttribute="trailing" constant="75" id="zEC-em-iS0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="idValue" destination="kyS-vB-alK" id="T8y-p6-Z3N"/>
+                        <outlet property="pwdValue" destination="kdw-VQ-s1G" id="Rfg-7u-bZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onebottle.jpg" width="126" height="150"/>
+    </resources>
+</document>
