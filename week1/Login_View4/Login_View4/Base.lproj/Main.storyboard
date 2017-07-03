@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,17 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="korea.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="95g-gK-Pwv">
-                                <rect key="frame" x="24.5" y="28" width="271" height="170.5"/>
+                                <rect key="frame" x="72" y="28" width="271" height="221"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fK2-wU-bJ1">
-                                <rect key="frame" x="64" y="250" width="192" height="68"/>
+                                <rect key="frame" x="83" y="334" width="248" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Km0-sl-R97">
-                                        <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-LQ-LsH">
-                                        <rect key="frame" x="0.0" y="38" width="192" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="248" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -49,17 +49,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-Zg-Awz">
-                                <rect key="frame" x="80" y="326" width="160" height="30"/>
+                                <rect key="frame" x="104" y="410" width="207" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-uf-oYG">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
                                         <state key="normal" title="Sign in"/>
                                         <connections>
                                             <action selector="signinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4La-4L-qfG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-VO-kbh">
-                                        <rect key="frame" x="84" y="0.0" width="76" height="30"/>
+                                        <rect key="frame" x="107" y="0.0" width="100" height="30"/>
                                         <state key="normal" title="Sign up">
                                             <color key="titleColor" red="1" green="0.31812414560269509" blue="0.25910402344552952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
