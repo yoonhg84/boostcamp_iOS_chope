@@ -118,7 +118,7 @@ case .Pecan:
 }
 
 
-//break 문이 따로 없어 필요시 fallthrough키워드 사용.
+// break 문이 따로 없어 필요시 fallthrough키워드 사용.
 
 
 //0~9 / 0...10 0~10
