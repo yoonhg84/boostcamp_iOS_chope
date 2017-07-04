@@ -8,40 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITextFieldDelegate {
 
-    
+    //MARK: id pwd 텍스트필드.
     @IBOutlet weak var idValue: UITextField!
-
     @IBOutlet weak var pwdValue: UITextField!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func input_id(_ id: UITextField) {
-    
-        idValue.text = id.text
-    
+        idValue.delegate = self
+        pwdValue.delegate = self
+        
     }
     
-    @IBAction func input_pwd(_ pwd: UITextField) {
-        pwdValue.text = pwd.text
+   //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        print(" ID : \(idValue.text!) , PW: \(pwdValue.text!)")
+    
+        //TextField id와 pwd 입력 후. Enter 누르면 키보드 사라짐.
+        
+        textField.resignFirstResponder()
+        return true
     }
     
+    
+    
+    
+    //MARK: 함수 - Sign in 버튼
     @IBAction func signinPressed(_ sender: UIButton) {
+       
         print("touch up inside - sign in")
         print("ID : \(idValue.text!) , PW: \(pwdValue.text!)")
+        
     }
+    
+    //MARK: 함수 - Sign up 버튼
     @IBAction func signupPressed(_ sender: UIButton) {
         print("touch up inside - sign up")
     }
     
+    //MARK: 뷰를 클릭했을 때 키보드 숨기기.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     
 }

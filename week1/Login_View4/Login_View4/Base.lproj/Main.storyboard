@@ -23,54 +23,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="korea.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="95g-gK-Pwv">
-                                <rect key="frame" x="72" y="28" width="271" height="221"/>
+                                <rect key="frame" x="71.666666666666686" y="27.999999999999986" width="271" height="220.66666666666663"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fK2-wU-bJ1">
-                                <rect key="frame" x="83" y="334" width="248" height="68"/>
+                                <rect key="frame" x="82.666666666666686" y="334" width="248.66666666666663" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Km0-sl-R97">
-                                        <rect key="frame" x="0.0" y="0.0" width="248" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="248.66666666666663" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="input_id:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="tLa-Uw-H8g"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-LQ-LsH">
-                                        <rect key="frame" x="0.0" y="38" width="248" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="248.66666666666663" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <connections>
-                                            <action selector="input_pwd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="BGj-VH-myR"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-Zg-Awz">
-                                <rect key="frame" x="104" y="410" width="207" height="30"/>
+                                <rect key="frame" x="103.66666666666669" y="410" width="207" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-uf-oYG">
-                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="30"/>
                                         <state key="normal" title="Sign in"/>
                                         <connections>
-                                            <action selector="signinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4La-4L-qfG"/>
+                                            <action selector="signinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duH-1i-WPs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-VO-kbh">
-                                        <rect key="frame" x="107" y="0.0" width="100" height="30"/>
+                                        <rect key="frame" x="107.66666666666667" y="0.0" width="99.333333333333329" height="30"/>
                                         <state key="normal" title="Sign up">
                                             <color key="titleColor" red="1" green="0.31812414560269509" blue="0.25910402344552952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="signupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ji3-wM-PQn"/>
+                                            <action selector="signupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OE5-1D-Sy7"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ayd-Zg-Awz" firstAttribute="top" secondItem="fK2-wU-bJ1" secondAttribute="bottom" constant="8" id="18r-A2-2Mg"/>
                             <constraint firstItem="95g-gK-Pwv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DHv-OF-iHH"/>
@@ -83,13 +78,21 @@
                             <constraint firstItem="fK2-wU-bJ1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z17-PY-fym"/>
                             <constraint firstItem="ayd-Zg-Awz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="zwz-SR-3ZY"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8Or-A9-teC" appends="YES" id="16M-w7-D9F"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="idValue" destination="Km0-sl-R97" id="KJb-PC-ZBu"/>
-                        <outlet property="pwdValue" destination="Ptu-LQ-LsH" id="sfq-y3-w3Y"/>
+                        <outlet property="idValue" destination="Km0-sl-R97" id="bSm-8m-lTG"/>
+                        <outlet property="pwdValue" destination="Ptu-LQ-LsH" id="JLk-sS-vjH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8Or-A9-teC">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="tbT-lb-mrQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
