@@ -21,12 +21,18 @@ class ViewController: UIViewController , UITextFieldDelegate {
         pwdValue.delegate = self
         
     }
-    
-   //MARK: UITextFieldDelegate
+    //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        print(" ID : \(idValue.text!) , PW: \(pwdValue.text!)")
-    
+        if let id = idValue.text , let pw = pwdValue.text{
+            if id != "" && pw != ""{
+                print("touch up inside - sign in")
+                print("ID : \(id) , PW: \(pw)")
+            } else {
+                print("다시 입력 해주세요.")
+            }
+        }
+        
         //TextField id와 pwd 입력 후. Enter 누르면 키보드 사라짐.
         
         textField.resignFirstResponder()
@@ -38,10 +44,17 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     //MARK: 함수 - Sign in 버튼
     @IBAction func signinPressed(_ sender: UIButton) {
-       
-        print("touch up inside - sign in")
-        print("ID : \(idValue.text!) , PW: \(pwdValue.text!)")
         
+        if let id = idValue.text , let pw = pwdValue.text{
+            // 입력받은 id , pw 를 string 길이로 체크했을 때 공백도 스트링카운트로 체크되어 오류를 범할 수 있음.
+            //if (id.characters.count != 0) && (pw.characters.count != 0) {
+            if id != "" && pw != ""{
+                print("touch up inside - sign in")
+                print("ID : \(id) , PW: \(pw)")
+            } else {
+                print("다시 입력 해주세요.")
+            }
+        }
     }
     
     //MARK: 함수 - Sign up 버튼
