@@ -37,11 +37,12 @@ class ViewController: UIViewController {
 
     @IBAction func showNextQuestion(sender: AnyObject){
         
+        
        /* if currentQuestionIndex == questions.count {
             currentQuestionIndex = 0
         }*/
-        
         currentQuestionIndex  = currentQuestionIndex + 1  == questions.count ? 0 : currentQuestionIndex + 1
+        
         let question: String = questions[currentQuestionIndex]
         questionLabel.text = question
         answerLabel.text = "???"
