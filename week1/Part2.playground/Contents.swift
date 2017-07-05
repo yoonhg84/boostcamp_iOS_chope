@@ -35,36 +35,14 @@ print(countingUp2.count)
 countingUp2.append("three") //배열에 항목 추가.
 
 
-var reading1: Float?
-var reading2: Float?
-var reading3: Float?
+//다중 옵셔널 바인딩 구문.
+var speed: Double? = 9.5
+var oilCheck: Double? = 9.2
+var rpm: Double? = 6.5
 
-reading1 = 9.0
-reading2 = 9.2
-reading3 = 9.7
-
-print(reading1) // Optional 타입은 !를 사용한 강제 언래핑 , if-let 구문을 통한 옵셔널 바인딩을 통해 언래핑하여야한다.
-
-//1
-print(reading1!)
-
-//2 
-    if let unwrappedValue = reading2 {
-        print(unwrappedValue)}
-        else {
-        print("is nil" )
-}
-
-if let r1 = reading1{
-        let avg = (r1)
-        print(avg)
-} else {
-    print("nil")
-}
-
-
-
-
+if let speedDashboard = speed , let oilCheckDashboard = oilCheck , let rpmDashboard = rpm {
+    let averageValue = (speedDashboard + oilCheckDashboard + rpmDashboard) / 3 } else {
+    let errorString = "Instrument reported a reading that was nil." }
 
 
 
@@ -100,20 +78,21 @@ for (i,int2) in testArr.enumerated(){
 
 
 enum PieType {
-    case Apple
-    case Cherry
-    case Pecan
+    case apple
+    case cherry
+    case pecan
 }
+//UpperCamelCase -> lowerCamelCase
 
-let favoritePie = PieType.Apple
+let favoritePie = PieType.apple
 
 let name: String
 switch favoritePie {
-case .Apple:
+case .apple:
     name = "Apple"
-case .Cherry:
+case .cherry:
     name = "cherry"
-case .Pecan:
+case .pecan:
     name = "Pecan"
 }
 
@@ -133,12 +112,12 @@ for i in 0..<10 {
 //열거형은 원시값을 가질 수 있다. 보통 Int 값을 갖지만 String , Character 값도 가질 수 있다. 
 //밑에와 같이 Apple2 를 0으로 할당하였다면 그 다음 case 는 순차적으로 증가시켜 할당한다. 1,2
 enum PieType2: Int {
-    case Apple2 = 0
-    case Cherry2
-    case Pecan2
+    case apple2 = 0
+    case cherry2
+    case pecan2
 }
 
-let pieRawValue = PieType2.Pecan2.rawValue
+let pieRawValue = PieType2.pecan2.rawValue
 if let pie = PieType2(rawValue: pieRawValue){
     print(pie)
 }else {
